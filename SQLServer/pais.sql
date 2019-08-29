@@ -6,12 +6,12 @@ begin try drop table pais end try begin catch end catch
 CREATE TABLE PAI_PAI_pais (
   PAI_nu_id int NOT NULL,
   PAI_ds_nome varchar(60) DEFAULT NULL,
-  PAI_ds_nome_pt varchar(60) DEFAULT NULL,
   PAI_ds_sigla varchar(2) DEFAULT NULL,
-  PAI_nu_bacen int DEFAULT NULL
+  PAI_nu_bacen int DEFAULT NULL,
+  PAI_bo_ativo bit DEFAULT 1
 );
 
---
+--a
 -- Inserindo dados na tabela "pais"
 --
 
